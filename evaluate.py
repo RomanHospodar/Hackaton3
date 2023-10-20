@@ -21,7 +21,9 @@ from typing import Any
 import glob
 import numpy as np
 import os
+import Unzip
 
+Unzip.unzip_model()
 model = Path("Model/MyModel")  # pretrained model path
 loaded_model = tf.keras.models.load_model(model)                                        # load pretrained model
 
